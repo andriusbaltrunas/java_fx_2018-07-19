@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="472.0" prefWidth="614.0">
+         <children>
+            <TextField fx:id="numberTexField" layoutX="30.0" layoutY="30.0" prefHeight="25.0" prefWidth="328.0" promptText="Iveskite skaiciu nuo 1 iki 10" />
+            <Label fx:id="resultLabel" layoutX="32.0" layoutY="79.0" prefHeight="17.0" prefWidth="328.0" textFill="#f24d1b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="30.0" layoutY="117.0" mnemonicParsing="false" onAction="#speti" prefHeight="25.0" prefWidth="97.0" text="Generuoti" />
+            <Button layoutX="155.0" layoutY="117.0" mnemonicParsing="false" onAction="#exit" text="Baigti" />
+            <Label fx:id="successResult" layoutX="25.0" layoutY="74.0" prefHeight="27.0" prefWidth="349.0" textFill="#27ae1d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="countLabel" layoutX="32.0" layoutY="173.0" prefHeight="27.0" prefWidth="328.0" />
+         </children></Pane>
+   </children>
+</GridPane>

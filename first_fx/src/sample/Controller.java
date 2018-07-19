@@ -13,6 +13,15 @@ public class Controller {
     @FXML
     private TextField userNameTextField;
 
+    @FXML
+    private TextField nameField;
+
+    @FXML
+    private TextField surnameField;
+
+    @FXML
+    private Label resultLabel;
+
     public void changeText(ActionEvent event){
         helloLabel.setText("TEKSTAS PAKEISTAS");
     }
@@ -21,5 +30,12 @@ public class Controller {
         String name = userNameTextField.getText();
         userNameTextField.setText("");
         helloLabel.setText(name);
+    }
+
+    public void sayHiToUser(ActionEvent event){
+        String name = nameField.getText();
+        String surname = surnameField.getText();
+
+        resultLabel.setText(name + " " + surname);
     }
 }
